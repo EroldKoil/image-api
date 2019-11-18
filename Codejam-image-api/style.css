@@ -1,0 +1,71 @@
+body{
+    display: flex;
+    padding: 100px;
+}
+
+.matrixSize, .lineWidth{
+    display: block;
+    height: 70px;
+    width: 100%;
+    margin-top: 20px;
+}
+.matrixSize{
+    height: 120px;
+}
+
+.colorSelector{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.canvas {
+    height: 512px;
+    width: 512px;
+    margin: 0 50px;
+    background-color: #999999;
+    border: 2px solid #000000;
+}
+.canvasWork{
+    height: 512px;
+    width: 512px;
+    margin: 0;
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+.toolsPanel {
+    width: 155px;
+    display: inline-block;
+}
+.toolsPanel div{
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    margin: 3px;
+    border: 4px solid rgb(68, 61, 45);
+}
+.toolsPanel div img{
+    height: 100%;
+    width: 100%;
+    display: block;
+
+}
+.selectedTool{
+    border: 4px solid rgb(221, 157, 12);
+}
+.currentColor{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 30px auto;
+    border: 1px solid #000000;
+    border-radius: 50%;
+}
+
+.loadImage-generate, .loadImage-color{
+    display: block;
+    margin: 20px auto;
+}
+.loadImage-text{
+
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+
+<div class="toolsPanel" >
+    <div id = "pan" ><img src="src/panel/pan.png"></div>
+    <div id = "clone" ><img src="src/panel/clone.png"></div>
+    <div id = "fill2" ><img src="src/panel/fill2.png"></div>
+    <div id = "fill" ><img src="src/panel/fill.png"></div>
+    <div id = "rubber" ><img src="src/panel/rubber.png"></div>
+    <div id = "line" ><img src="src/panel/line.png"></div>
+    <div id = "square" ><img src="src/panel/square.png"></div>
+    <div id = "round" ><img src="src/panel/round.png"></div>
+    <div id = "hand" ><img src="src/panel/hand.png"></div>
+    <div id = "magicPan" ><img src="src/panel/magicPan.png"></div>
+    <div id = "selection" ><img src="src/panel/selection.png"></div>
+    <div id = "arbitrarySelection" ><img src="src/panel/arbitrarySelection.png"></div>
+    <div id = "lighter" ><img src="src/panel/lighter.png"></div>
+    <div id = "chear" ><img src="src/panel/chear.png"></div>
+    <div id = "pipette" ><img src="src/panel/pipette.png"></div>
+</div>
+
+<canvas id="canvas" class="canvas">
+    <canvas id="canvasWork" class="canvasWork"> </canvas>
+</canvas>
+
+<div class="config">
+    <select id="matrixSize" class="matrixSize" size="7" multiple >
+        <option disabled>Matrix size</option>
+        <option selected value="4">4x4</option>
+        <option value="32">32x32</option>
+        <option value="image">image</option>
+        <option value="128">128x128</option>
+        <option value="256">256x256</option>
+        <option value="512">512x512</option>
+    </select>
+
+    <select id="lineWidth" class="lineWidth" size="4" multiple >
+        <option disabled>Line width</option>
+        <option selected value="1">1px</option>
+        <option value="2">2px</option>
+        <option value="4">4px</option>
+    </select>
+    <div class="loadImage">
+        <input type="button" class="loadImage-generate" value="Generate Image">
+        <input type="button" class="loadImage-color"  value="Black and white">
+        <input type="text" class="loadImage-text" >
+    </div>
+    <div class="colorSelector" >
+        <input id="colorLeft"  type="color"  value="#000000">
+        <input id="colorRight"  type="color"  value="#ffffff">
+        <div id="currentColor" class="currentColor"></div>
+    </div>
+</div>
+
+</body>
+
+</html>
